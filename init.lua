@@ -14,3 +14,5 @@ local opt = vim.o
 -- local leap = require "plugins.leap"
 -- leap.add_default_mappings()
 opt.relativenumber = true
+
+-- local wk = require "which-key"
