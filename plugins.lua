@@ -127,7 +127,7 @@ local plugins = {
     -- you can configure Hop the way you like here; see :h hop-config
       require'hop'.setup {
         keys = 'etovxqpdygfblzhckisuran',
-        uppercase_labels = true,
+        -- uppercase_labels = true,
       }
     end,
     lazy = false,
@@ -145,6 +145,15 @@ local plugins = {
     lazy = false,
   },
 
+  {
+    "folke/which-key.nvim",
+    require("which-key").register({
+      ["<leader>"] = {
+        f = { name = "+find" },
+        g = { name = "+git" },
+      }
+    }),
+  },
 }
 
 return plugins
