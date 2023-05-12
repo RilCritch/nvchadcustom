@@ -26,12 +26,12 @@ M.ui = {
 
   statusline = {
     -- theme options: default/vscode/vscode_colored/minimal
-    theme = "default",
+    -- theme = "default",
 
     -- seperator style options:
     -- default/round/block/arrow
     -- seperators only work with "default" theme; round/block work with "minimal"
-    seperator_style = "round",
+    -- seperator_style = "round",
     -- overriden_modules = nil,
   },
 
