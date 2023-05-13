@@ -12,6 +12,7 @@ M.disabled = { -- i can use these for other keybindings in future
     ["<leader>v"] = "",
     ["<leader>th"] = "",
     ["<leader>td"] = "",
+    ["<leader>g"] = "",
 
     -- no modifier ["keys"] = "",
     ["]c"] = "",
@@ -45,7 +46,6 @@ M.disabled = { -- i can use these for other keybindings in future
 M.general = {
   n = {
     [";"] = { ":", "enter command mode", opts = { nowait = true } },
-
   },
 }
 
