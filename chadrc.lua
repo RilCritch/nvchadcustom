@@ -38,6 +38,15 @@ M.ui = {
   telescope = {
     style = "bordered",
   },
+
+  changed_themes = {
+    yoru = {
+      base_16 = {
+        base02 = "#27292a",
+        base03 = "#343637",
+      },
+    },
+  },
 }
 
 M.plugins = "custom.plugins"
