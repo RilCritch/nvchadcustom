@@ -133,14 +133,26 @@ local plugins = {
     lazy = false,
   },
 
+  -- { -- figure out how to use
+  --   "roobert/search-replace.nvim",
+  --   config = function()
+  --   require("search-replace").setup({
+  --     -- optionally override defaults
+  --     -- default_replace_single_buffer_options = "gcI",
+  --     -- default_replace_multi_buffer_options = "egcI",
+  --   })
+  --   end,
+  --   lazy = false,
+  -- },
+
   {
-    "roobert/search-replace.nvim",
+    "kylechui/nvim-surround",
+    version = "*", -- Use for stability; omit to use `main` branch for the latest features
+    event = "VeryLazy",
     config = function()
-    require("search-replace").setup({
-      -- optionally override defaults
-      -- default_replace_single_buffer_options = "gcI",
-      -- default_replace_multi_buffer_options = "egcI",
-    })
+        require("nvim-surround").setup({
+            -- Configuration here, or leave empty to use defaults
+        })
     end,
     lazy = false,
   },
