@@ -57,7 +57,7 @@ M.nvterm = {
       end,
       "toggle floating term",
     },
-    ["<A-t"] = {
+    ["<A-t>"] = {
       function()
         require("nvterm.terminal").toggle "float"
       end,
@@ -66,7 +66,7 @@ M.nvterm = {
   },
 
   t = {
-    ["<A-t"] = {
+    ["<A-t>"] = {
       function()
         require("nvterm.terminal").toggle "float"
       end,
