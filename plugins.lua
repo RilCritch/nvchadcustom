@@ -157,7 +157,7 @@ local plugins = {
     lazy = false,
   },
 
-  {
+  { -- adding which-key group names
     "folke/which-key.nvim",
     require("which-key").register({
       ["<leader>"] = {
@@ -165,6 +165,29 @@ local plugins = {
         g = { name = "+git" },
       }
     }),
+  },
+
+  {
+    "CRAG666/code_runner.nvim",
+    config = function()
+      require('code_runner').setup({
+        filetype = {
+          java = {
+            "cd $dir &&",
+            "javac $fileName &&",
+            "java $fileNameWithoutExt"
+          },
+          python = "python3 -u",
+          typescript = "deno run",
+          rust = {
+          "cd $dir &&",
+          "rustc $fileName &&",
+          "$dir/$fileNameWithoutExt"
+          },
+        },
+      })
+    end,
+    lazy = false,
   },
 }
 
