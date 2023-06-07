@@ -51,12 +51,16 @@ M.general = {
 
 M.coderunner = {
   n = {
-    ["<leader>rr"]  = { "<cmd> RunCode<CR>", "Run code based on file type" },
-    ["<leader>rf"]  = { "<cmd> RunFile<CR>", "Run the current file" },
-    ["<leader>rp"]  = { "<cmd> RunProject<CR>", "Run the current project" },
-    ["<leader>rc"]  = { "<cmd> RunClose<CR>", "Close the code runner" },
+    ["<leader>rr"]  = { "<cmd> RunCode <CR>", "Run code based on file type" },
+    ["<leader>rf"]  = { "<cmd> RunFile <CR>", "Run the current file" },
+    ["<leader>rp"]  = { "<cmd> RunProject <CR>", "Run the current project" },
+    ["<leader>rc"]  = { "<cmd> RunClose <CR>", "Close the code runner" },
   },
 }
+
+-- M.tmux = {
+--   -- place tmux keybindings here
+-- }
 
 M.nvterm = {
   n = {
