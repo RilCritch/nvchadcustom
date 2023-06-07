@@ -101,7 +101,8 @@ M.gitsigns = {
 
 M.nvimtree = {
   n = {
-    ["<leader>e"] = { "<cmd> NvimTreeToggle <CR>", "toggle nvimtree" },
+    ["<leader>ee"] = { "<cmd> NvimTreeToggle <CR>", "toggle nvimtree" },
+    ["<leader>et"] = { "<cmd> NvimTreeFocus <CR>", "focus nvimtree"},
   },
 }
 
