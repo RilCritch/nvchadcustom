@@ -163,6 +163,7 @@ local plugins = {
       ["<leader>"] = {
         f = { name = "+find" },
         g = { name = "+git" },
+        e = { name = "+file explorer"},
       }
     }),
   },
