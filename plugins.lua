@@ -167,7 +167,7 @@ local plugins = {
     }),
   },
 
-  {
+  { -- for running code within nvim
     "CRAG666/code_runner.nvim",
     config = function()
       require('code_runner').setup({
@@ -189,6 +189,21 @@ local plugins = {
     end,
     lazy = false,
   },
+
+  {
+    "nvim-tree/nvim-tree.lua",
+    lazy = false,
+  },
+  --
+  -- { -- tmux to fancify my workflow brother
+  --   "aserowy/tmux.nvim",
+  --   config = function()
+  --     require("tmux").setup({
+  --       -- put options here
+  --     })
+  --   end,
+  --   lazy = false,
+  -- },
 }
 
 return plugins
