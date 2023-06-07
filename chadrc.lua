@@ -54,6 +54,8 @@ M.ui = {
   -- theme = "wombat",
   theme = "yoru",
 
+  transparency = true,
+
   nvdash = { load_on_startup = true },
 
   hl_override = highlights.override,
