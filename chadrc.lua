@@ -53,7 +53,6 @@ M.ui = {
   -- theme = "vscode_dark",
   -- theme = "wombat",
   theme = "yoru",
-
   transparency = true,
 
   nvdash = { load_on_startup = true },
@@ -63,13 +62,17 @@ M.ui = {
 
   statusline = {
     -- theme options: default/vscode/vscode_colored/minimal
-    theme = "minimal",
+    theme = "vscode_colored",
 
     -- seperator style options:
     -- default/round/block/arrow
     -- seperators only work with "default" theme; round/block work with "minimal"
     -- seperator_style = "round",
     -- overriden_modules = nil,
+  },
+
+  tabufline = {
+    show_numbers = true,
   },
 
   telescope = {
