@@ -164,6 +164,7 @@ local plugins = {
         f = { name = "+find" },
         g = { name = "+git" },
         e = { name = "+file explorer"},
+        r = { name = "+code runner"}
       }
     }),
   },
