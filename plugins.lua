@@ -194,8 +194,12 @@ local plugins = {
 
   {
     "nvim-tree/nvim-tree.lua",
+    opts = function()
+      return require "custom.configs.nvimtree"
+    end,
     lazy = false,
   },
+
   --
   -- { -- tmux to fancify my workflow brother
   --   "aserowy/tmux.nvim",
