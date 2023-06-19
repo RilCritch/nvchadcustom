@@ -10,9 +10,18 @@ local opt = vim.o
 --   command = "tabdo wincmd =",
 -- })
 
--- leap.nvim configuration
--- local leap = require "plugins.leap"
--- leap.add_default_mappings()
 opt.relativenumber = true
+opt.scrolloff = 999 -- center cursor
+opt.title = true
+opt.titlestring = "NV - %f"
 
--- local wk = require "which-key"
+-- [[ Highlight on yank ]]
+-- See `:help vim.highlight.on_yank()`
+local highlight_group = vim.api.nvim_create_augroup('YankHighlight', { clear = true })
+vim.api.nvim_create_autocmd('TextYankPost', {
+  callback = function()
+    vim.highlight.on_yank()
+  end,
+  group = highlight_group,
+  pattern = '*',
+})
