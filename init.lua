@@ -14,7 +14,7 @@ opt.relativenumber = true
 opt.scrolloff = 999 -- center cursor
 opt.title = true
 opt.titlestring = "NV - %f"
-
+-- vim.opt.statusline = ""
 -- [[ Highlight on yank ]]
 -- See `:help vim.highlight.on_yank()`
 local highlight_group = vim.api.nvim_create_augroup('YankHighlight', { clear = true })
