@@ -6,8 +6,20 @@ local M = {}
 
 ---@type Base46HLGroupsList
 M.override = {
-  Comment = {
-    italic = true,
+  TelescopeSelection = {
+    fg = "white",
+    bg = "grey",
+  },
+  TelescopePromptPrefix = {
+    fg = "blue",
+  },
+  TelescopePromptTitle = {
+    fg = "darker_black",
+    bg = "blue",
+  },
+  TelescopeResultsTitle = {
+    fg = "darker_black",
+    bg = "red",
   },
 }
 
