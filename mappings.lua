@@ -46,6 +46,7 @@ M.disabled = { -- i can use these for other keybindings in future
 M.general = {
   n = {
     [";"] = { ":", "enter command mode", opts = { nowait = true } },
+    [":"] = { "<cmd> Telescope commands <CR>", "enter telescope command mode", opts = { nowait = true } },
   },
 }
 
