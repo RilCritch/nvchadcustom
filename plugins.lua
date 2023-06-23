@@ -3,8 +3,6 @@ local overrides = require("custom.configs.overrides")
 ---@type NvPluginSpec[]
 local plugins = {
 
-  -- Override plugin definition options
-
   {
     "neovim/nvim-lspconfig",
     dependencies = {
@@ -112,6 +110,16 @@ local plugins = {
       })
     end,
     lazy = false,
+  },
+
+  {
+    "shortcuts/no-neck-pain.nvim",
+    lazy = false,
+    config = function()
+      require('no-neck-pain').setup({
+        autocmds = { enableOnVimEnter = true }
+      })
+    end,
   },
 
 }

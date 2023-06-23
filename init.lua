@@ -31,19 +31,14 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 -- command to run when no file or directory is specified
 local function open_nvim_tree(data)
 
+  -- vim.cmd("NoNeckPain")
+
   -- buffer is a real file on the disk
   local real_file = vim.fn.filereadable(data.file) == 1
 
   -- buffer is a [No Name]
   local no_name = data.file == "" and vim.bo[data.buf].buftype == ""
 
-  -- buffer is a directory
-  -- local buftype = vim.api.nvim_buf_get_option(0, 'buftype')
-  -- local directory = vim.fn.isdirectory(data.file) == 1
-
-  -- if real_file or buftype == 'dir' and not no_name then
-  --   return
-  -- end
   if real_file or not no_name then
     return
   end
@@ -64,3 +59,4 @@ local function open_nvim_tree(data)
 end
 
 vim.api.nvim_create_autocmd({ "VimEnter" }, { callback = open_nvim_tree })
+
