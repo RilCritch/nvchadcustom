@@ -55,29 +55,29 @@ M.ui = {
   theme = "yoru",
   transparency = true,
 
-  nvdash = {
-    load_on_startup = true,
+  -- nvdash = {
+  -- load_on_startup = true,
 
-    header = {
-      "           ▄ ▄                   ",
-      "       ▄   ▄▄▄     ▄ ▄▄▄ ▄ ▄     ",
-      "       █ ▄ █▄█ ▄▄▄ █ █▄█ █ █     ",
-      "    ▄▄ █▄█▄▄▄█ █▄█▄█▄▄█▄▄█ █     ",
-      "  ▄ █▄▄█ ▄ ▄▄ ▄█ ▄▄▄▄▄▄▄▄▄▄▄▄▄▄  ",
-      "  █▄▄▄▄ ▄▄▄ █ ▄ ▄▄▄ ▄ ▄▄▄ ▄ ▄ █ ▄",
-      "▄ █ █▄█ █▄█ █ █ █▄█ █ █▄█ ▄▄▄ █ █",
-      "█▄█ ▄ █▄▄█▄▄█ █ ▄▄█ █ ▄ █ █▄█▄█ █",
-      "    █▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█ █▄█▄▄▄█    ",
-    },
-
-    buttons = {
-      { "  Find File", "Spc f f", "Telescope find_files" },
-      -- { "󰈚  Recent Files", "Spc f o", "Telescope oldfiles" },
-      { "  Bookmarks", "Spc m a", "Telescope marks" },
-      { "  File Explorer", "Spc e e", "Open File Explorer" },
-      { "  Mappings", "Spc c h", "NvCheatsheet" },
-    },
-  },
+  --   header = {
+  --     "           ▄ ▄                   ",
+  --     "       ▄   ▄▄▄     ▄ ▄▄▄ ▄ ▄     ",
+  --     "       █ ▄ █▄█ ▄▄▄ █ █▄█ █ █     ",
+  --     "    ▄▄ █▄█▄▄▄█ █▄█▄█▄▄█▄▄█ █     ",
+  --     "  ▄ █▄▄█ ▄ ▄▄ ▄█ ▄▄▄▄▄▄▄▄▄▄▄▄▄▄  ",
+  --     "  █▄▄▄▄ ▄▄▄ █ ▄ ▄▄▄ ▄ ▄▄▄ ▄ ▄ █ ▄",
+  --     "▄ █ █▄█ █▄█ █ █ █▄█ █ █▄█ ▄▄▄ █ █",
+  --     "█▄█ ▄ █▄▄█▄▄█ █ ▄▄█ █ ▄ █ █▄█▄█ █",
+  --     "    █▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█ █▄█▄▄▄█    ",
+  --   },
+  --
+  --   buttons = {
+  --     { "  Find File", "Spc f f", "Telescope find_files" },
+  --     -- { "󰈚  Recent Files", "Spc f o", "Telescope oldfiles" },
+  --     { "  Bookmarks", "Spc m a", "Telescope marks" },
+  --     { "  File Explorer", "Spc e e", "Open File Explorer" },
+  --     { "  Mappings", "Spc c h", "NvCheatsheet" },
+  --   },
+  -- },
 
   hl_override = highlights.override,
   hl_add = highlights.add,
