@@ -13,7 +13,7 @@ local opt = vim.o
 opt.relativenumber = true
 opt.scrolloff = 999 -- center cursor
 opt.title = true
-opt.titlestring = "NV - %f"
+opt.titlestring = "%f"
 -- vim.opt.statusline = ""
 -- [[ Highlight on yank ]]
 -- See `:help vim.highlight.on_yank()`
