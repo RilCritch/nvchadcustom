@@ -51,10 +51,10 @@ local function open_nvim_tree(data)
 
   -- telescope
   require('telescope.builtin').find_files({layout_strategy='vertical',layout_config={
-    preview_cutoff=999,
-    prompt_position='top',
+    preview_cutoff = 999,
+    prompt_position = 'top',
     height = 0.99,
-    width = 0.99,
+    width = 125,
   }})
 end
 
