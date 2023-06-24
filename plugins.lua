@@ -117,7 +117,8 @@ local plugins = {
     lazy = false,
     config = function()
       require('no-neck-pain').setup({
-        autocmds = { enableOnVimEnter = true }
+        autocmds = { enableOnVimEnter = true },
+        width = 150,
       })
     end,
   },
