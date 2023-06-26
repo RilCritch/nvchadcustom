@@ -109,6 +109,14 @@ M.nvimtree = {
   },
 }
 
+M.utility = {
+  n = {
+    ["<leader>nn"] = { "<cmd> NoNeckPain <CR>", "toggle no-neck-pain (center buffer)" },
+    ["<leader>nu"] = { "<cmd> NoNeckPainWidthUp <CR>", "increase nnp window width by 5" },
+    ["<leader>nd"] = { "<cmd> NoNeckPainWidthDown <CR>", "decrease nnp window width by 5" },
+  },
+}
+
 M.navigation = {
   n = {
     ["<leader>j"] = { "<cmd> HopWord <CR>", "HopWord" },
