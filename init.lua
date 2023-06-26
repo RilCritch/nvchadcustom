@@ -13,7 +13,7 @@ vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
 opt.relativenumber = true
-opt.scrolloff = 999 -- center cursor
+-- opt.scrolloff = 999 -- center cursor
 opt.title = true
 opt.titlestring = "%f"
 -- vim.opt.statusline = ""
