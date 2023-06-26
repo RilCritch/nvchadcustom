@@ -84,7 +84,8 @@ local plugins = {
         f = { name = "+find" },
         g = { name = "+git" },
         e = { name = "+file explorer"},
-        r = { name = "+code runner"}
+        r = { name = "+code runner"},
+        n = { name = "+no-neck-pain"},
       }
     }),
   },
@@ -117,8 +118,11 @@ local plugins = {
     lazy = false,
     config = function()
       require('no-neck-pain').setup({
-        autocmds = { enableOnVimEnter = true },
+        -- autocmds = { enableOnVimEnter = true },
         width = 150,
+        -- integrations = {
+        --
+        -- },
       })
     end,
   },
