@@ -46,7 +46,7 @@ M.disabled = { -- i can use these for other keybindings in future
 M.general = {
   n = {
     [";"] = { ":", "enter command mode", opts = { nowait = true } },
-    [":"] = { "<cmd> Telescope commands <CR>", "enter telescope command mode", opts = { nowait = true } },
+    ["<leader>;"] = { "<cmd> Telescope commands <CR>", "enter telescope command mode", opts = { nowait = true } },
   },
 }
 
@@ -114,6 +114,7 @@ M.utility = {
     ["<leader>nn"] = { "<cmd> NoNeckPain <CR>", "toggle no-neck-pain (center buffer)" },
     ["<leader>nu"] = { "<cmd> NoNeckPainWidthUp <CR>", "increase nnp window width by 5" },
     ["<leader>nd"] = { "<cmd> NoNeckPainWidthDown <CR>", "decrease nnp window width by 5" },
+    ["<leader>d"] = { "<cmd> normal! zz <CR>", "center cursor" },
   },
 }
 
